@@ -1,37 +1,39 @@
-Este es un resumen general de lo que usaremos en el curso:
+# composition-app
 
-1.- Vue 3 (Versión 3.2.38>)
-2.- Script Setup
-3.- Composition API
-4.- Vue Query
-    Mutaciones
-    Queries (simples y complejos)
-    Manejo de caché
-    QueryClient
-    Prefetch
-    Caché manual
-5.- Quasar 2.10+
-    Sistema de estilos
-    Temas
-    Script Setup
-    Boot files
-    íconos
-6.- Pinia
-    Options Store
-    Setup Store
-7.- GitHub API
-8.- Vue DevTools con
-    Composition API
-    Pinia
-    Vue Query
-9.- Vue Router 4+
-    Simple
-    Anidado
-    Lazyload
-10.- Axios
-11.- Manejo de errores
-12.- Interaces
-13.- TypeScript con Vue y cada pieza usada en el curso
-14.- Modals
-15.- Loaders
-16.- Re-utilización de componentes
+This template should help get you started developing with Vue 3 in Vite.
+
+## Recommended IDE Setup
+
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+
+## Type Support for `.vue` Imports in TS
+
+TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+
+## Customize configuration
+
+See [Vite Configuration Reference](https://vitejs.dev/config/).
+
+## Project Setup
+
+```sh
+npm install
+```
+
+### Compile and Hot-Reload for Development
+
+```sh
+npm run dev
+```
+
+### Type-Check, Compile and Minify for Production
+
+```sh
+npm run build
+```
+
+### Lint with [ESLint](https://eslint.org/)
+
+```sh
+npm run lint
+```
