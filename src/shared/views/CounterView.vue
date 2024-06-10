@@ -1,16 +1,23 @@
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent, ref, computed } from "vue";
 
 export default defineComponent({
   setup() {
-    const counter = ref(6);
+
+    const message = ref('¡Hola, Mundo!');
+    const counter = ref(0);
 
     const increase = () => {
       counter.value++;
     }
+
+    const doubledCount = computed(() => counter.value * 2);
+
     return {
       counter,
       increase,
+      message,
+      doubledCount
     }
   }
 });
@@ -18,7 +25,9 @@ export default defineComponent({
 
 <template>
   <div class="about">
-    <p>Counter View: {{ counter }}</p>
+    <p>Mensaje: {{ message }}</p>
+    <p>Contador: {{ counter }}</p>
+    <p>Doble: {{ doubledCount }}</p>
     <button @click="increase">+1</button>
   </div>
 </template>
