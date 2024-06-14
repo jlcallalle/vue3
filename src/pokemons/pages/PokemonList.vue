@@ -1,9 +1,7 @@
-<script setup>
-
-</script>
+<script setup></script>
 
 <template>
-    <div>
-        <h1>Pokemon List</h1>
-    </div>
+  <div>
+    <h1>Pokemon List</h1>
+  </div>
 </template>

@@ -1,5 +1,5 @@
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue'
 // A "ref" is a reactive data source that stores a value.
 // Technically, we don't need to wrap the string with ref()
 // in order to display it, but we will see in the next
@@ -23,32 +23,26 @@ function toggleRed() {
 
 function toggleColor() {
   color.value = color.value === 'green' ? 'blue' : 'green'
-} 
+}
 </script>
-
 
 <template>
   <main>
     <!-- <p>homa mundo</p> -->
-    <p> {{ mensaje }}</p>
+    <p>{{ mensaje }}</p>
     <button @click="reverseMessage">Reverse Message</button>
-    <br>
+    <br />
     <a href="#" @click.prevent="notify">mostrar Alert</a>
-    <br>
+    <br />
 
     <!--
     class bindings have special support for objects and arrays
     in addition to plain strings
     -->
-    <p :class="{ red: isRed }" @click="toggleRed">
-      Toogle click red
-    </p>
+    <p :class="{ red: isRed }" @click="toggleRed">Toogle click red</p>
 
     <!-- style bindings also support object and arrays -->
-    <p :style="{ color }" @click="toggleColor">
-      Toogle click verde y azul
-    </p>
-
+    <p :style="{ color }" @click="toggleColor">Toogle click verde y azul</p>
   </main>
 </template>
 
