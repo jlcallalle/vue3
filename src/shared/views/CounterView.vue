@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 
-const message = ref('¡Hola, Mundo!');
+const message = ref('¡Hola, Mundo 2!');
 const counter = ref(0)
 /* const message = ref('¡Hola, Mundo!'); */
 /* 
