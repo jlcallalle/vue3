@@ -11,14 +11,15 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: '/counter',
+      name: 'counter',
+      // component: () => import('../shared/views/CounterView.vue')
+      component: () => import('../counter/views/CounterView.vue')
+    },
+    {
       path: '/about',
       name: 'about',
       component: AboutView
-    },
-    {
-      path: '/counter',
-      name: 'counter',
-      component: () => import('../shared/views/CounterView.vue')
     },
     { 
       path: '/:pathMatch(.*)*', 
