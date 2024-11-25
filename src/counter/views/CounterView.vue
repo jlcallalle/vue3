@@ -25,14 +25,14 @@ export default defineComponent({
 import { ref } from 'vue';
 
 const counter = ref(5);
-const increase = () => {
+/* const increase = () => {
   counter.value++
-}
+} */
 </script>
 
 <template>
   <div class="about">
     <p>Contador: {{ counter }}</p>
-    <button @click="increase">+1</button>
+    <button @click="counter++">+1</button>
   </div>
 </template>
